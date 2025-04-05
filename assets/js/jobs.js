@@ -1,7 +1,8 @@
 const jobListingsContainer = document.getElementById("job-listings");
 const searchInput = document.getElementById("jobSearchInput");
 
-const apiUrl = 'http://localhost:5000/api/jobs';
+// ✅ Render backend URL
+const apiUrl = 'https://career-guidance-16f0.onrender.com/api/jobs';
 
 async function fetchJobs(query = "software developer", location = "India") {
   jobListingsContainer.innerHTML = `<div class="loader"></div>`;
