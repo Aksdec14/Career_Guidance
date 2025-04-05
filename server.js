@@ -1,11 +1,11 @@
 // server.js
 const express = require('express');
-const axios = require('axios/index.d.cts');
+const axios = require('axios'); // ✅ fix this line!
 const cors = require('cors');
-require('dotenv/lib/main').config();
+require('dotenv').config(); // ✅ fix this line!
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
