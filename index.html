@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Career Guide</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Career Quiz</a></li>
+                <li><a href="recommendation.html">Recommendations</a></li>
+                <li><a href="roadmap.html">Roadmaps</a></li>
+                <li><a href="compare.html">Compare Careers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h2>Find the Right Career for You</h2>
+            <p>Take our quiz, explore career paths, and get personalized recommendations to shape your future.</p>
+            <a href="quiz.html" class="btn">Start Career Quiz</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">How We Help</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Personalized Career Suggestions</h3>
+                    <p>We analyze your skills and interests to recommend the best career paths for you.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Roadmaps to Success</h3>
+                    <p>Follow structured career roadmaps to build skills and grow in your chosen field.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Compare Careers</h3>
+                    <p>Evaluate different careers side by side based on salary, work-life balance, and growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Section -->
+    <!-- Job Search Section -->
+    <section class="job-search-section">
+        <div class="container">
+            <h2 class="section-title">Find Your Dream Job</h2>
+            <input type="text" id="jobSearchInput" placeholder="Search by job title, company, or location" />
+
+            <div class="job-filters">
+                <label><input type="checkbox" id="remoteFilter"> Remote</label>
+                <label><input type="checkbox" id="fullTimeFilter"> Full-Time</label>
+                <label><input type="checkbox" id="partTimeFilter"> Part-Time</label>
+                <label><input type="checkbox" id="internshipFilter"> Internship</label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings Section -->
+    <section class="job-section">
+        <div class="container job-listings-container" id="job-listings">
+            <!-- Jobs will load here -->
+        </div>
+    </section>
+
+
+    <!-- JS Script -->
+
+    <script src="assets/js/jobs.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Careers</title>
+    <link rel="stylesheet" href="assets/css/compare.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Career Guide</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Career Quiz</a></li>
+            <li><a href="recommendation.html">Recommendations</a></li>
+            <li><a href="roadmap.html">Career Roadmap</a></li>
+            <li><a href="compare.html">Compare Careers</a></li>
+        </ul>
+    </nav>
+
+    <!-- Comparison Section -->
+    <div class="container">
+        <h1>Compare Careers</h1>
+        <p>Select two careers to compare side by side.</p>
+
+        <div class="comparison-form">
+            <select id="career1">
+                <option value="">Select Career 1</option>
+            </select>
+
+            <select id="career2">
+                <option value="">Select Career 2</option>
+            </select>
+        </div>
+
+        <table id="compare-table">
+            <!-- Table content will be injected here by JS -->
+        </table>
+
+        <a href="recommendation.html" class="back-button">← Back to Recommendations</a>
+    </div>
+
+    <script src="assets/js/compare.js"></script>
+</body>
+</html>

@@ -1,0 +1,2251 @@
+[
+  {
+    "name": "Web Developer",
+    "description": "Build and maintain websites.",
+    "traits": ["tech-savvy", "problem-solving", "creative"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate",
+    "futureScope": "High demand with growing web usage.",
+    "howToStart": "Learn HTML, CSS, JavaScript. Build projects.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Learn HTML", "Learn CSS", "Basic JavaScript"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["JavaScript ES6", "React or Angular", "APIs"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Full-stack development", "System design", "DevOps basics"]
+      }
+    ]
+  },
+  {
+    "name": "Data Scientist",
+    "description": "Analyze and interpret complex data.",
+    "traits": ["analytical", "detail-oriented", "curious"],
+    "averageSalary": "$100,000",
+    "workload": "High",
+    "futureScope": "Growing demand in various sectors.",
+    "howToStart": "Learn Python, statistics, and data visualization.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Python basics", "Statistics fundamentals", "Data cleaning"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Machine learning basics", "Data visualization tools", "SQL"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Deep learning", "Big data technologies", "Model deployment"]
+      }
+    ]
+  },
+  {
+    "name": "Graphic Designer",
+    "description": "Create visual content for communication.",
+    "traits": ["creative", "imaginative", "artistic"],
+    "averageSalary": "$60,000",
+    "workload": "Moderate",
+    "futureScope": "Steady demand in marketing and branding.",
+    "howToStart": "Learn design software like Adobe Creative Suite.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic design principles", "Adobe Photoshop basics", "Adobe Illustrator basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Typography", "Color theory", "Branding basics", "UI/UX principles"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Branding", "UI/UX design", "Portfolio development"]
+      }
+    ]
+  },
+  {
+    "name": "Mechanical Engineer",
+    "description": "Design and develop mechanical systems.",
+    "traits": ["analytical", "practical", "innovative"],
+    "averageSalary": "$80,000",
+    "workload": "High",
+    "futureScope": "Strong demand in manufacturing and tech.",
+    "howToStart": "Study mechanical engineering principles.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic physics", "Engineering drawing", "SolidWorks basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Thermodynamics", "Fluid mechanics", "Materials science"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced CAD", "Project management", "Systems design"]
+      }
+    ]
+  },
+  {
+    "name": "Healthcare Professional",
+    "description": "Provide medical care and support.",
+    "traits": ["empathetic", "detail-oriented", "strong communication skills"],
+    "averageSalary": "$75,000",
+    "workload": "High",
+    "futureScope": "Growing demand in healthcare and wellness sectors.",
+    "howToStart": "Pursue relevant medical or nursing degrees.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic biology", "Anatomy and physiology", "Patient care basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Clinical skills training", "Medical ethics"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Specialization training", "Continuing education"]
+      }
+    ]
+  },
+  {
+    "name": "Digital Marketer",
+    "description": "Promote products/services online.",
+    "traits": ["creative", "analytical", "strategic"],
+    "averageSalary": "$65,000",
+    "workload": "Moderate",
+    "futureScope": "High demand in e-commerce and tech.",
+    "howToStart": "Learn SEO, social media marketing, and analytics.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic marketing principles", "SEO basics", "Social media fundamentals"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Content marketing", "Email marketing", "Google Analytics"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["PPC advertising", "Marketing automation", "Data analysis"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Cybersecurity Analyst",
+    "description": "Protect systems and networks from cyber threats.",
+    "traits": ["analytical", "problem-solving", "detail-oriented"],
+    "averageSalary": "$90,000",
+    "workload": "High",
+    "futureScope": "Increasing demand due to cyber threats.",
+    "howToStart": "Learn networking, security principles, and ethical hacking.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Networking basics", "Operating systems fundamentals", "Basic security concepts"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Ethical hacking", "Incident response", "Security tools"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced penetration testing", "Security architecture", "Compliance and regulations"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Project Manager",
+    "description": "Oversee projects from start to finish.",
+    "traits": ["organized", "leadership", "communication"],
+    "averageSalary": "$85,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand across industries.",
+    "howToStart": "Learn project management methodologies.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic project management principles", "Time management", "Communication skills"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Agile methodologies", "Risk management", "Team leadership"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced project management tools", "Strategic planning", "Stakeholder management"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Content Writer",
+    "description": "Create written content for various platforms.",
+    "traits": ["creative", "strong writing skills", "research-oriented"],
+    "averageSalary": "$55,000",
+    "workload": "Moderate",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Develop writing skills and build a portfolio.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic writing skills", "Grammar and style", "Research techniques"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["SEO writing", "Content strategy", "Editing and proofreading"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Copywriting", "Content marketing", "Brand storytelling"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "UX/UI Designer",
+    "description": "Design user-friendly interfaces and experiences.",
+    "traits": ["creative", "empathetic", "problem-solving"],
+    "averageSalary": "$75,000",
+    "workload": "Moderate to high",
+    "futureScope": "High demand in tech and design.",
+    "howToStart": "Learn design principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic design principles", "Wireframing", "Prototyping"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["User research", "Usability testing", "Interaction design"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced prototyping", "Design systems", "User experience strategy"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Cloud Engineer",
+    "description": "Design and manage cloud infrastructure.",
+    "traits": ["analytical", "problem-solving", "technical"],
+    "averageSalary": "$95,000",
+    "workload": "High",
+    "futureScope": "Growing demand in cloud computing.",
+    "howToStart": "Learn cloud platforms like AWS, Azure, or Google Cloud.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Cloud computing basics", "Networking fundamentals", "Basic Linux commands"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["AWS/Azure/Google Cloud basics", "Infrastructure as code", "Security best practices"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced cloud architecture", "DevOps practices", "Cost management"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Artificial Intelligence Engineer",
+    "description": "Develop AI models and systems.",
+    "traits": ["analytical", "problem-solving", "innovative"],
+    "averageSalary": "$110,000",
+    "workload": "High",
+    "futureScope": "Rapidly growing field with high demand.",
+    "howToStart": "Learn programming, machine learning, and AI concepts.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Python basics", "Linear algebra", "Statistics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Machine learning algorithms", "Deep learning basics", "Data preprocessing"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Natural language processing", "Computer vision", "AI ethics"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Blockchain Developer",
+    "description": "Develop and maintain blockchain applications.",
+    "traits": ["analytical", "problem-solving", "innovative"],
+    "averageSalary": "$120,000",
+    "workload": "High",
+    "futureScope": "Growing demand in finance and tech.",
+    "howToStart": "Learn blockchain concepts and programming languages.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Blockchain basics", "Cryptography fundamentals", "Basic programming"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Smart contracts", "Ethereum basics", "Decentralized applications (dApps)"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced blockchain architecture", "Consensus algorithms", "Security best practices"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Game Developer",
+    "description": "Create and develop video games.",
+    "traits": ["creative", "technical", "problem-solving"],
+    "averageSalary": "$80,000",
+    "workload": "High",
+    "futureScope": "Growing demand in gaming industry.",
+    "howToStart": "Learn game development engines and programming.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic programming", "Game design principles", "Unity or Unreal Engine basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Game mechanics", "3D modeling", "Animation basics"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced game development", "Multiplayer networking", "Game monetization strategies"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Financial Analyst",
+    "description": "Analyze financial data and trends.",
+    "traits": ["analytical", "detail-oriented", "strong communication skills"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in finance and investment sectors.",
+    "howToStart": "Learn finance principles and data analysis.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic finance principles", "Excel basics", "Data analysis fundamentals"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Financial modeling", "Investment analysis", "Risk management"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced financial modeling", "Portfolio management", "Valuation techniques"]
+      }
+    ]
+  },
+
+  {
+    "name": "Teacher",
+    "description": "Educate students in various subjects and foster their development.",
+    "traits": ["patient", "communicative", "organized"],
+    "averageSalary": "$50,000",
+    "workload": "Moderate to high",
+    "futureScope": "Consistent demand in education sector.",
+    "howToStart": "Earn a degree in education or subject expertise, get teaching certification.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Earn a bachelor's degree", "Learn classroom management", "Basic educational psychology"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Get teaching certification", "Curriculum design", "Subject specialization"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Master’s in education", "Leadership training", "Educational research"]
+      }
+    ]
+  },
+  {
+    "name": "Psychologist",
+    "description": "Help people manage mental health and emotional well-being.",
+    "traits": ["empathetic", "analytical", "good listener"],
+    "averageSalary": "$80,000",
+    "workload": "Moderate",
+    "futureScope": "Growing need for mental health professionals.",
+    "howToStart": "Study psychology, pursue graduate degree, get licensed.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Bachelor’s in Psychology", "Intro to mental health", "Research basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Master’s in Clinical Psychology", "Internship/fieldwork", "Ethics in practice"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Doctorate (Ph.D. or Psy.D.)", "State license", "Specialization (e.g., child, forensic)"]
+      }
+    ]
+  },
+  {
+    "name": "Journalist",
+    "description": "Report news and stories to inform the public.",
+    "traits": ["curious", "good communicator", "observant"],
+    "averageSalary": "$45,000",
+    "workload": "High and deadline-driven",
+    "futureScope": "Digital journalism is growing rapidly.",
+    "howToStart": "Study journalism, practice writing, gain internship experience.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Bachelor’s in Journalism or Communications", "News writing", "Interviewing skills"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Internship at news agency", "Ethical reporting", "Photo/video journalism"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Investigative journalism", "Data journalism", "Media law and responsibility"]
+      }
+    ]
+  },
+  {
+    "name": "Human Resource Manager",
+    "description": "Oversee hiring, employee relations, and organizational policies.",
+    "traits": ["organized", "empathetic", "decision-maker"],
+    "averageSalary": "$65,000",
+    "workload": "Moderate",
+    "futureScope": "Stable growth in corporate sectors.",
+    "howToStart": "Pursue a degree in HR or business, gain experience in HR roles.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Bachelor’s in HR or Business", "Learn labor laws", "Basic recruitment practices"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Payroll & compensation", "Performance management", "Conflict resolution"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["HR certifications (e.g., SHRM)", "Organizational leadership", "Policy development"]
+      }
+    ]
+  },
+  {
+    "name": "Sales Executive",
+    "description": "Drive sales and build customer relationships.",
+    "traits": ["persuasive", "goal-oriented", "people person"],
+    "averageSalary": "$55,000",
+    "workload": "High and target-driven",
+    "futureScope": "Consistent demand across industries.",
+    "howToStart": "Learn sales techniques, gain experience in customer service.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic sales principles", "Customer service skills", "Product knowledge"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Negotiation skills", "Sales strategies", "CRM software"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Sales forecasting", "Market analysis", "Team leadership"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Social Media Manager",
+    "description": "Manage and grow a brand's presence on social media platforms.",
+    "traits": ["creative", "analytical", "good communicator"],
+    "averageSalary": "$60,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Learn social media strategies and analytics.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic social media platforms", "Content creation", "Engagement strategies"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Analytics tools", "Paid advertising", "Brand voice development"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Crisis management", "Influencer partnerships", "Social media strategy"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Supply Chain Manager",
+    "description": "Oversee and optimize supply chain operations.",
+    "traits": ["analytical", "organized", "problem-solving"],
+    "averageSalary": "$85,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in manufacturing and logistics.",
+    "howToStart": "Study supply chain management principles.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic supply chain concepts", "Inventory management", "Logistics fundamentals"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Demand forecasting", "Supplier relationship management", "Lean principles"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Global supply chain management", "Risk management", "Sustainability practices"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Interior Designer",
+    "description": "Plan and design interior spaces for functionality and aesthetics.",
+    "traits": ["creative", "detail-oriented", "good communicator"],
+    "averageSalary": "$65,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in real estate and renovation.",
+    "howToStart": "Study design principles and software.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic design principles", "Color theory", "Space planning"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Design software (AutoCAD, SketchUp)", "Material selection", "Lighting design"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Project management", "Client relations", "Sustainable design practices"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Public Relations Specialist",
+    "description": "Manage and improve the public image of clients.",
+    "traits": ["communicative", "strategic", "good writer"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in corporate and non-profit sectors.",
+    "howToStart": "Study communications or PR, gain experience through internships.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic PR principles", "Media relations", "Writing press releases"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Crisis communication", "Event planning", "Social media strategy"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Strategic communication", "Brand management", "Stakeholder engagement"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Real Estate Agent",
+    "description": "Assist clients in buying, selling, and renting properties.",
+    "traits": ["persuasive", "people-oriented", "negotiator"],
+    "averageSalary": "$50,000",
+    "workload": "High and flexible",
+    "futureScope": "Steady demand in real estate market.",
+    "howToStart": "Get licensed and learn about the real estate market.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Real estate principles", "Local market knowledge", "Basic sales techniques"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Negotiation skills", "Property valuation", "Marketing strategies"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Investment analysis", "Client relationship management", "Market trends analysis"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Chef",
+    "description": "Prepare and cook food in various settings.",
+    "traits": ["creative", "detail-oriented", "team player"],
+    "averageSalary": "$45,000",
+    "workload": "High and fast-paced",
+    "futureScope": "Steady demand in hospitality and catering.",
+    "howToStart": "Attend culinary school or gain experience in kitchens.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic cooking techniques", "Food safety", "Knife skills"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Menu planning", "Advanced cooking techniques", "Kitchen management"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Culinary arts specialization", "Restaurant management", "Food presentation"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Data Analyst",
+    "description": "Analyze data to help organizations make informed decisions.",
+    "traits": ["analytical", "detail-oriented", "problem-solving"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in various sectors.",
+    "howToStart": "Learn data analysis tools and techniques.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic statistics", "Excel basics", "Data visualization"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["SQL basics", "Data cleaning", "Data analysis tools (e.g., Python, R)"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Predictive analytics", "Machine learning basics", "Big data technologies"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Network Administrator",
+    "description": "Manage and maintain computer networks.",
+    "traits": ["technical", "problem-solving", "detail-oriented"],
+    "averageSalary": "$75,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in IT and tech sectors.",
+    "howToStart": "Learn networking principles and gain certifications.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic networking concepts", "TCP/IP fundamentals", "Basic security principles"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Network configuration", "Troubleshooting techniques", "Firewall management"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced network design", "Network security", "Cloud networking"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "SEO Specialist",
+    "description": "Optimize websites to rank higher in search engines.",
+    "traits": ["analytical", "detail-oriented", "strategic"],
+    "averageSalary": "$65,000",
+    "workload": "Moderate",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Learn SEO principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic SEO concepts", "Keyword research", "On-page optimization"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Link building strategies", "Technical SEO", "Content optimization"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["SEO analytics", "Local SEO", "SEO strategy development"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Pharmacist",
+    "description": "Dispense medications and provide healthcare advice.",
+    "traits": ["detail-oriented", "strong communication skills", "analytical"],
+    "averageSalary": "$100,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in healthcare.",
+    "howToStart": "Earn a Doctor of Pharmacy (Pharm.D.) degree.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic chemistry", "Pharmacology fundamentals", "Patient care basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Clinical pharmacy", "Pharmacy law", "Medication therapy management"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Specialization (e.g., oncology, pediatrics)", "Continuing education", "Research"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Electrician",
+    "description": "Install and maintain electrical systems.",
+    "traits": ["technical", "problem-solving", "detail-oriented"],
+    "averageSalary": "$55,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in construction and maintenance.",
+    "howToStart": "Complete an apprenticeship and get licensed.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic electrical theory", "Safety practices", "Hand tools usage"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Wiring techniques", "Circuit design", "Troubleshooting"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced electrical systems", "Project management", "Specialized certifications"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Veterinarian",
+    "description": "Provide medical care to animals.",
+    "traits": ["empathetic", "detail-oriented", "strong communication skills"],
+    "averageSalary": "$90,000",
+    "workload": "High",
+    "futureScope": "Steady demand in pet care and agriculture.",
+    "howToStart": "Earn a Doctor of Veterinary Medicine (DVM) degree.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic biology", "Animal anatomy", "Veterinary ethics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Clinical skills training", "Animal behavior", "Pharmacology"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Specialization (e.g., surgery, dermatology)", "Continuing education", "Research"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Fashion Designer",
+    "description": "Create clothing and accessory designs.",
+    "traits": ["creative", "imaginative", "detail-oriented"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in fashion industry.",
+    "howToStart": "Study fashion design and gain experience.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic design principles", "Sewing techniques", "Fashion history"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Textile knowledge", "Pattern making", "Fashion illustration"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Collection development", "Fashion marketing", "Trend forecasting"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Data Engineer",
+    "description": "Design and maintain data systems and architecture.",
+    "traits": ["analytical", "problem-solving", "technical"],
+    "averageSalary": "$95,000",
+    "workload": "High",
+    "futureScope": "Growing demand in data-driven industries.",
+    "howToStart": "Learn programming, databases, and data warehousing.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic programming (Python, SQL)", "Data modeling", "ETL basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Data warehousing", "Big data technologies (Hadoop, Spark)", "Data pipeline design"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Cloud data solutions", "Data governance", "Real-time data processing"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Marketing Manager",
+    "description": "Develop and implement marketing strategies.",
+    "traits": ["strategic", "creative", "analytical"],
+    "averageSalary": "$85,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in various industries.",
+    "howToStart": "Study marketing principles and gain experience.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic marketing concepts", "Market research", "Consumer behavior"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Digital marketing", "Brand management", "Advertising strategies"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Marketing analytics", "Strategic planning", "Leadership skills"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Biotechnologist",
+    "description": "Use biological processes for industrial and medical applications.",
+    "traits": ["analytical", "innovative", "detail-oriented"],
+    "averageSalary": "$80,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in healthcare and agriculture.",
+    "howToStart": "Study biology, chemistry, and biotechnology.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic biology and chemistry", "Laboratory techniques", "Research methods"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Genetic engineering", "Microbiology", "Bioinformatics"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Clinical trials", "Regulatory affairs", "Bioprocessing"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Environmental Scientist",
+    "description": "Study and protect the environment.",
+    "traits": ["analytical", "problem-solving", "passionate about nature"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in environmental protection.",
+    "howToStart": "Study environmental science and gain field experience.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic environmental science", "Fieldwork techniques", "Data collection"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Environmental policy", "Ecosystem management", "Research methods"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Environmental impact assessment", "Sustainability practices", "Project management"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Web Designer",
+    "description": "Design the layout and visual appearance of websites.",
+    "traits": ["creative", "detail-oriented", "good communicator"],
+    "averageSalary": "$65,000",
+    "workload": "Moderate",
+    "futureScope": "Growing demand in web development.",
+    "howToStart": "Learn design principles and web design tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic design principles", "HTML/CSS basics", "Wireframing"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Responsive design", "User experience (UX)", "Graphic design software"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced web design tools", "Design systems", "Client relations"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Content Strategist",
+    "description": "Plan and manage content creation and distribution.",
+    "traits": ["strategic", "creative", "analytical"],
+    "averageSalary": "$75,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Learn content marketing principles and strategies.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic content marketing concepts", "Content creation", "SEO basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Content strategy development", "Analytics tools", "Social media strategy"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Content management systems (CMS)", "Brand storytelling", "Leadership skills"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Logistics Coordinator",
+    "description": "Manage and coordinate logistics operations.",
+    "traits": ["organized", "detail-oriented", "problem-solving"],
+    "averageSalary": "$60,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in supply chain management.",
+    "howToStart": "Study logistics and supply chain management.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic logistics concepts", "Inventory management", "Transportation fundamentals"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Supply chain optimization", "Vendor management", "Data analysis"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Global logistics", "Project management", "Risk management"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Database Administrator",
+    "description": "Manage and maintain databases.",
+    "traits": ["analytical", "detail-oriented", "problem-solving"],
+    "averageSalary": "$80,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in IT and tech sectors.",
+    "howToStart": "Learn database management systems and SQL.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic database concepts", "SQL basics", "Data modeling"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Database design", "Performance tuning", "Backup and recovery"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced SQL", "Database security", "Cloud databases"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Data Scientist",
+    "description": "Analyze and interpret complex data.",
+    "traits": ["analytical", "problem-solving", "technical"],
+    "averageSalary": "$120,000",
+    "workload": "High",
+    "futureScope": "Rapidly growing field with high demand.",
+    "howToStart": "Learn programming, statistics, and machine learning.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Python basics", "Statistics fundamentals", "Data visualization"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Machine learning algorithms", "Data wrangling", "SQL basics"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Deep learning", "Big data technologies", "Model deployment"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Graphic Designer",
+    "description": "Create visual content for various media.",
+    "traits": ["creative", "detail-oriented", "good communicator"],
+    "averageSalary": "$60,000",
+    "workload": "Moderate",
+    "futureScope": "Growing demand in digital marketing and advertising.",
+    "howToStart": "Learn design software and principles.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic design principles", "Adobe Photoshop basics", "Color theory"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Adobe Illustrator", "Typography", "Branding basics"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced design software", "Portfolio development", "Client relations"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Mechanical Engineer",
+    "description": "Design and develop mechanical systems.",
+    "traits": ["analytical", "problem-solving", "technical"],
+    "averageSalary": "$80,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in manufacturing and engineering.",
+    "howToStart": "Earn a degree in mechanical engineering.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic engineering principles", "Mathematics for engineers", "CAD basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Thermodynamics", "Mechanics of materials", "Engineering design process"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Finite element analysis", "Control systems", "Project management"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Nurse",
+    "description": "Provide patient care and support.",
+    "traits": ["empathetic", "detail-oriented", "strong communication skills"],
+    "averageSalary": "$70,000",
+    "workload": "High and demanding",
+    "futureScope": "Steady demand in healthcare.",
+    "howToStart": "Earn a nursing degree and get licensed.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic nursing principles", "Patient care basics", "Anatomy and physiology"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Clinical skills training", "Pharmacology", "Patient assessment"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Specialization (e.g., pediatrics, geriatrics)", "Advanced practice nursing", "Leadership skills"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Digital Marketing Specialist",
+    "description": "Develop and implement online marketing strategies.",
+    "traits": ["creative", "analytical", "strategic"],
+    "averageSalary": "$65,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Learn digital marketing principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic marketing concepts", "Social media basics", "Content creation"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["SEO basics", "Email marketing", "Analytics tools"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["PPC advertising", "Marketing automation", "Data analysis"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Cybersecurity Analyst",
+    "description": "Protect systems and networks from cyber threats.",
+    "traits": ["analytical", "problem-solving", "technical"],
+    "averageSalary": "$90,000",
+    "workload": "High",
+    "futureScope": "Growing demand in all sectors.",
+    "howToStart": "Learn cybersecurity principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic networking concepts", "Security fundamentals", "Ethical hacking basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Network security", "Incident response", "Vulnerability assessment"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced threat detection", "Security architecture", "Compliance and regulations"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Project Manager",
+    "description": "Plan, execute, and close projects.",
+    "traits": ["organized", "leadership", "problem-solving"],
+    "averageSalary": "$85,000",
+    "workload": "High",
+    "futureScope": "Steady demand in various industries.",
+    "howToStart": "Learn project management principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic project management concepts", "Time management", "Team collaboration"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Agile methodologies", "Risk management", "Budgeting"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced project management tools", "Strategic planning", "Stakeholder management"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Content Writer",
+    "description": "Create written content for various platforms.",
+    "traits": ["creative", "good communicator", "detail-oriented"],
+    "averageSalary": "$50,000",
+    "workload": "Moderate",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Practice writing and learn SEO principles.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic writing skills", "SEO basics", "Research techniques"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Content strategy", "Editing and proofreading", "Social media writing"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Copywriting", "Content marketing", "Brand storytelling"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "UX/UI Designer",
+    "description": "Design user-friendly interfaces and experiences.",
+    "traits": ["creative", "analytical", "good communicator"],
+    "averageSalary": "$75,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in tech and design.",
+    "howToStart": "Learn design principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic design principles", "Wireframing", "User research"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Prototyping tools", "Usability testing", "Responsive design"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Interaction design", "User interface design", "Design systems"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Cloud Engineer",
+    "description": "Design and manage cloud computing systems.",
+    "traits": ["technical", "problem-solving", "analytical"],
+    "averageSalary": "$110,000",
+    "workload": "High",
+    "futureScope": "Rapidly growing field with high demand.",
+    "howToStart": "Learn cloud computing concepts and platforms.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic cloud concepts", "AWS/Azure basics", "Networking fundamentals"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Cloud architecture", "DevOps practices", "Security in the cloud"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced cloud architecture", "Cost management", "Cloud migration strategies"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Artificial Intelligence Engineer",
+    "description": "Develop AI models and systems.",
+    "traits": ["analytical", "problem-solving", "technical"],
+    "averageSalary": "$120,000",
+    "workload": "High",
+    "futureScope": "Rapidly growing field with high demand.",
+    "howToStart": "Learn programming, machine learning, and AI concepts.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic programming (Python)", "Statistics fundamentals", "Machine learning basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Deep learning", "Natural language processing", "Computer vision"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Reinforcement learning", "AI ethics", "Model deployment"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Blockchain Developer",
+    "description": "Develop and maintain blockchain applications.",
+    "traits": ["technical", "problem-solving", "innovative"],
+    "averageSalary": "$100,000",
+    "workload": "High",
+    "futureScope": "Rapidly growing field with high demand.",
+    "howToStart": "Learn blockchain technology and programming languages.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic blockchain concepts", "Cryptography basics", "Smart contracts"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Ethereum development", "DApps", "Blockchain security"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Consensus algorithms", "Scalability solutions", "Blockchain architecture"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Game Developer",
+    "description": "Design and develop video games.",
+    "traits": ["creative", "technical", "problem-solving"],
+    "averageSalary": "$80,000",
+    "workload": "High and deadline-driven",
+    "futureScope": "Growing demand in gaming industry.",
+    "howToStart": "Learn programming languages and game design principles.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic programming (C#, C++)", "Game design fundamentals", "Game engines (Unity, Unreal)"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Game mechanics", "Level design", "Multiplayer game development"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced graphics programming", "AI in games", "Game monetization strategies"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Financial Analyst",
+    "description": "Analyze financial data to help organizations make informed decisions.",
+    "traits": ["analytical", "detail-oriented", "problem-solving"],
+    "averageSalary": "$75,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in finance and investment sectors.",
+    "howToStart": "Study finance or accounting, gain experience in financial analysis.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic accounting principles", "Financial modeling basics", "Excel for finance"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Investment analysis", "Risk management", "Financial reporting"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced financial modeling", "Portfolio management", "Valuation techniques"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Data Privacy Officer",
+    "description": "Ensure compliance with data protection regulations.",
+    "traits": ["analytical", "detail-oriented", "problem-solving"],
+    "averageSalary": "$90,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in all sectors.",
+    "howToStart": "Learn data protection laws and compliance.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic data protection principles", "GDPR basics", "Data handling practices"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Risk assessment", "Data breach response", "Compliance audits"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced data protection strategies", "Privacy impact assessments", "Data governance"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Content Marketing Manager",
+    "description": "Develop and implement content marketing strategies.",
+    "traits": ["strategic", "creative", "analytical"],
+    "averageSalary": "$80,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Learn content marketing principles and strategies.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic content marketing concepts", "Content creation", "SEO basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Content strategy development", "Analytics tools", "Social media strategy"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Content management systems (CMS)", "Brand storytelling", "Leadership skills"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "E-commerce Manager",
+    "description": "Manage online sales and marketing strategies.",
+    "traits": ["strategic", "analytical", "creative"],
+    "averageSalary": "$75,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in retail and e-commerce.",
+    "howToStart": "Learn e-commerce principles and digital marketing.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic e-commerce concepts", "Digital marketing basics", "Customer service"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["E-commerce platforms (Shopify, WooCommerce)", "SEO for e-commerce", "Analytics tools"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["E-commerce strategy development", "Inventory management", "Customer relationship management"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Human Resources Manager",
+    "description": "Oversee recruitment, training, and employee relations.",
+    "traits": ["people-oriented", "organized", "good communicator"],
+    "averageSalary": "$85,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in all sectors.",
+    "howToStart": "Study human resources management and gain experience.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic HR principles", "Recruitment processes", "Employee relations"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Performance management", "Training and development", "HR software"] 
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Strategic HR management", "Labor laws", "Organizational development"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Business Analyst",
+    "description": "Analyze business processes and recommend improvements.",
+    "traits": ["analytical", "problem-solving", "good communicator"],
+    "averageSalary": "$80,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in various industries.",
+    "howToStart": "Learn business analysis principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic business concepts", "Data analysis basics", "Stakeholder communication"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Business process modeling", "Requirements gathering", "Project management"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced data analysis", "Strategic planning", "Change management"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Social Media Manager",
+    "description": "Manage and grow social media presence for brands.",
+    "traits": ["creative", "strategic", "good communicator"],
+    "averageSalary": "$65,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Learn social media marketing principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic social media platforms", "Content creation", "Engagement strategies"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Analytics tools", "Paid advertising", "Brand management"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Social media strategy development", "Crisis management", "Influencer partnerships"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Supply Chain Manager",
+    "description": "Oversee and optimize supply chain operations.",
+    "traits": ["analytical", "problem-solving", "organized"],
+    "averageSalary": "$90,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in logistics and manufacturing.",
+    "howToStart": "Study supply chain management principles.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic supply chain concepts", "Inventory management", "Logistics basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Demand forecasting", "Supplier management", "Data analysis"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Supply chain optimization", "Project management", "Global supply chain strategies"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Interior Designer",
+    "description": "Plan and design interior spaces.",
+    "traits": ["creative", "detail-oriented", "good communicator"],
+    "averageSalary": "$65,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in residential and commercial sectors.",
+    "howToStart": "Study interior design principles and gain experience.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic design principles", "Color theory", "Space planning"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Material selection", "Lighting design", "Client relations"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Project management", "Sustainable design practices", "Building codes and regulations"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Public Relations Specialist",
+    "description": "Manage and improve the public image of organizations.",
+    "traits": ["strategic", "good communicator", "problem-solving"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in various industries.",
+    "howToStart": "Learn public relations principles and gain experience.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic PR concepts", "Media relations", "Writing press releases"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Crisis communication", "Event planning", "Social media strategy"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Strategic communication", "Brand management", "Stakeholder engagement"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Real Estate Agent",
+    "description": "Assist clients in buying, selling, and renting properties.",
+    "traits": ["people-oriented", "good communicator", "negotiation skills"],
+    "averageSalary": "$60,000",
+    "workload": "High and variable",
+    "futureScope": "Steady demand in real estate market.",
+    "howToStart": "Get licensed and gain experience in real estate.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic real estate principles", "Property valuation", "Client relations"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Market analysis", "Negotiation techniques", "Real estate laws"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Investment properties", "Commercial real estate", "Marketing strategies"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Cybersecurity Consultant",
+    "description": "Provide expert advice on cybersecurity measures.",
+    "traits": ["analytical", "problem-solving", "technical"],
+    "averageSalary": "$100,000",
+    "workload": "High",
+    "futureScope": "Growing demand in all sectors.",
+    "howToStart": "Learn cybersecurity principles and gain experience.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic networking concepts", "Security fundamentals", "Ethical hacking basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Network security", "Incident response", "Vulnerability assessment"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced threat detection", "Security architecture", "Compliance and regulations"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Data Analyst",
+    "description": "Analyze and interpret data to help organizations make informed decisions.",
+    "traits": ["analytical", "problem-solving", "detail-oriented"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in data-driven industries.",
+    "howToStart": "Learn data analysis tools and techniques.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic statistics", "Excel basics", "Data visualization"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["SQL basics", "Data cleaning", "Data analysis tools (Tableau, Power BI)"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Predictive analytics", "Machine learning basics", "Big data technologies"]
+      },
+      {
+        "level": "Expert",
+        "steps": ["Advanced data modeling", "Data governance", "Leadership skills"]
+      }
+    ]
+  },
+  {
+    "name": "Web Developer",
+    "description": "Build and maintain websites and web applications.",
+    "traits": ["technical", "problem-solving", "detail-oriented"],
+    "averageSalary": "$75,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in tech industry.",
+    "howToStart": "Learn programming languages and web development frameworks.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["HTML/CSS basics", "JavaScript basics", "Responsive design"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Front-end frameworks (React, Angular)", "Back-end development (Node.js, Express)", "Database management"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Full-stack development", "API development", "DevOps practices"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "SEO Specialist",
+    "description": "Optimize websites to improve search engine rankings.",
+    "traits": ["analytical", "detail-oriented", "strategic"],
+    "averageSalary": "$65,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Learn SEO principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic SEO concepts", "Keyword research", "On-page optimization"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Link building", "Technical SEO", "Analytics tools"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["SEO strategy development", "Content marketing", "Local SEO"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Pharmacist",
+    "description": "Dispense medications and provide healthcare advice.",
+    "traits": ["detail-oriented", "strong communication skills", "empathetic"],
+    "averageSalary": "$120,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in healthcare.",
+    "howToStart": "Earn a Doctor of Pharmacy (Pharm.D.) degree.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic pharmacology", "Patient care basics", "Pharmacy laws"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Clinical pharmacy", "Medication therapy management", "Patient counseling"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Specialization (e.g., oncology, pediatrics)", "Research", "Leadership skills"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Network Administrator",
+    "description": "Manage and maintain computer networks.",
+    "traits": ["technical", "problem-solving", "detail-oriented"],
+    "averageSalary": "$75,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in IT and tech sectors.",
+    "howToStart": "Learn networking principles and gain experience.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic networking concepts", "Network protocols", "Troubleshooting basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Network security", "Routing and switching", "Server management"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Cloud networking", "Network architecture", "Advanced troubleshooting"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "UX Researcher",
+    "description": "Conduct research to understand user needs and behaviors.",
+    "traits": ["analytical", "detail-oriented", "good communicator"],
+    "averageSalary": "$85,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in tech and design.",
+    "howToStart": "Learn research methods and UX principles.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic research methods", "User interviews", "Survey design"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Usability testing", "Data analysis", "User personas"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced research techniques", "Stakeholder communication", "UX strategy development"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Data Engineer",
+    "description": "Design and build data pipelines and systems.",
+    "traits": ["technical", "problem-solving", "analytical"],
+    "averageSalary": "$100,000",
+    "workload": "High",
+    "futureScope": "Growing demand in data-driven industries.",
+    "howToStart": "Learn programming, databases, and data engineering tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic programming (Python, SQL)", "Data modeling", "ETL basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Data warehousing", "Big data technologies (Hadoop, Spark)", "Data pipeline design"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Cloud data solutions", "Data governance", "Real-time data processing"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Digital Content Creator",
+    "description": "Create and manage digital content for various platforms.",
+    "traits": ["creative", "good communicator", "detail-oriented"],
+    "averageSalary": "$60,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Learn content creation tools and strategies.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic content creation skills", "Social media basics", "Photography basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Video editing", "Graphic design", "Content strategy"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Brand storytelling", "Analytics tools", "Content marketing"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Cloud Solutions Architect",
+    "description": "Design and implement cloud-based solutions.",
+    "traits": ["technical", "problem-solving", "analytical"],
+    "averageSalary": "$130,000",
+    "workload": "High",
+    "futureScope": "Rapidly growing field with high demand.",
+    "howToStart": "Learn cloud computing concepts and platforms.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic cloud concepts", "AWS/Azure basics", "Networking fundamentals"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Cloud architecture", "DevOps practices", "Security in the cloud"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced cloud architecture", "Cost management", "Cloud migration strategies"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Technical Writer",
+    "description": "Create technical documentation and manuals.",
+    "traits": ["detail-oriented", "good communicator", "analytical"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate",
+    "futureScope": "Steady demand in tech and engineering.",
+    "howToStart": "Learn technical writing principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic writing skills", "Technical documentation basics", "Research techniques"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Content management systems (CMS)", "Editing and proofreading", "User manuals"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["API documentation", "Project management", "Technical communication"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Sales Manager",
+    "description": "Oversee sales teams and strategies.",
+    "traits": ["people-oriented", "strategic", "good communicator"],
+    "averageSalary": "$90,000",
+    "workload": "High",
+    "futureScope": "Steady demand in various industries.",
+    "howToStart": "Gain experience in sales and management.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic sales principles", "Customer relationship management", "Sales techniques"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Sales strategy development", "Team management", "Market analysis"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Sales forecasting", "Negotiation skills", "Leadership skills"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Business Development Manager",
+    "description": "Identify and pursue new business opportunities.",
+    "traits": ["strategic", "people-oriented", "good communicator"],
+    "averageSalary": "$85,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in various industries.",
+    "howToStart": "Gain experience in sales and business development.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic business principles", "Market research", "Networking skills"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Sales techniques", "Negotiation skills", "Strategic planning"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Partnership development", "Market expansion strategies", "Leadership skills"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Quality Assurance Engineer",
+    "description": "Ensure the quality of software products through testing.",
+    "traits": ["analytical", "detail-oriented", "problem-solving"],
+    "averageSalary": "$75,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in software development.",
+    "howToStart": "Learn software testing principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic software testing concepts", "Test case design", "Bug tracking"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Automated testing tools", "Performance testing", "Agile methodologies"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Test automation frameworks", "Continuous integration", "Quality assurance strategies"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Data Visualization Specialist",
+    "description": "Create visual representations of data to communicate insights.",
+    "traits": ["analytical", "creative", "detail-oriented"],
+    "averageSalary": "$80,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in data-driven industries.",
+    "howToStart": "Learn data visualization tools and techniques.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic data visualization principles", "Excel basics", "Data storytelling"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Data visualization tools (Tableau, Power BI)", "Data cleaning", "Dashboard design"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced data visualization techniques", "Interactive dashboards", "User experience design"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Artificial Intelligence Researcher",
+    "description": "Conduct research to advance the field of AI.",
+    "traits": ["analytical", "problem-solving", "innovative"],
+    "averageSalary": "$130,000",
+    "workload": "High",
+    "futureScope": "Rapidly growing field with high demand.",
+    "howToStart": "Earn a degree in computer science or related field.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic programming (Python)", "Statistics fundamentals", "Machine learning basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Deep learning", "Natural language processing", "Computer vision"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Reinforcement learning", "AI ethics", "Research methodologies"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Digital Product Manager",
+    "description": "Oversee the development and management of digital products.",
+    "traits": ["strategic", "analytical", "good communicator"],
+    "averageSalary": "$100,000",
+    "workload": "High",
+    "futureScope": "Growing demand in tech and digital industries.",
+    "howToStart": "Learn product management principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic product management concepts", "Market research", "User experience basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Agile methodologies", "Product roadmapping", "Stakeholder communication"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Product strategy development", "Data analysis", "Leadership skills"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Environmental Scientist",
+    "description": "Study and protect the environment.",
+    "traits": ["analytical", "problem-solving", "detail-oriented"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in environmental sectors.",
+    "howToStart": "Earn a degree in environmental science or related field.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic environmental principles", "Fieldwork techniques", "Data collection"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Environmental regulations", "Data analysis", "Research methods"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Environmental impact assessments", "Sustainability practices", "Project management"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Data Scientist",
+    "description": "Analyze and interpret complex data to help organizations make informed decisions.",
+    "traits": ["analytical", "problem-solving", "technical"],
+    "averageSalary": "$120,000",
+    "workload": "High",
+    "futureScope": "Rapidly growing field with high demand.",
+    "howToStart": "Learn programming, statistics, and data analysis techniques.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic programming (Python, R)", "Statistics fundamentals", "Data visualization"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Machine learning basics", "Data wrangling", "Big data technologies"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Deep learning", "Natural language processing", "Data engineering"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Digital Marketing Specialist",
+    "description": "Develop and implement digital marketing strategies.",
+    "traits": ["creative", "analytical", "strategic"],
+    "averageSalary": "$70,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Learn digital marketing principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic digital marketing concepts", "Social media basics", "Content creation"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["SEO basics", "Email marketing", "Analytics tools"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["PPC advertising", "Marketing automation", "Data analysis"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Cybersecurity Analyst",
+    "description": "Monitor and protect an organization's systems and networks.",
+    "traits": ["analytical", "problem-solving", "technical"],
+    "averageSalary": "$90,000",
+    "workload": "High",
+    "futureScope": "Growing demand in all sectors.",
+    "howToStart": "Learn cybersecurity principles and gain experience.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic networking concepts", "Security fundamentals", "Ethical hacking basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Network security", "Incident response", "Vulnerability assessment"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced threat detection", "Security architecture", "Compliance and regulations"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Project Coordinator",
+    "description": "Assist in managing projects and ensuring they are completed on time.",
+    "traits": ["organized", "detail-oriented", "good communicator"],
+    "averageSalary": "$55,000",
+    "workload": "Moderate",
+    "futureScope": "Steady demand in various industries.",
+    "howToStart": "Gain experience in project management.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic project management concepts", "Time management", "Team collaboration"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Agile methodologies", "Risk management", "Budgeting"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced project management tools", "Strategic planning", "Stakeholder management"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Content Strategist",
+    "description": "Develop and implement content strategies for brands.",
+    "traits": ["strategic", "creative", "analytical"],
+    "averageSalary": "$80,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in digital marketing.",
+    "howToStart": "Learn content marketing principles and strategies.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic content marketing concepts", "Content creation", "SEO basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Content strategy development", "Analytics tools", "Social media strategy"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Content management systems (CMS)", "Brand storytelling", "Leadership skills"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "User Experience Designer",
+    "description": "Design user-friendly interfaces and experiences.",
+    "traits": ["creative", "analytical", "problem-solving"],
+    "averageSalary": "$85,000",
+    "workload": "Moderate to high",
+    "futureScope": "Growing demand in tech and design.",
+    "howToStart": "Learn design principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic design principles", "Wireframing", "User research"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Prototyping tools", "Usability testing", "Responsive design"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Interaction design", "User interface design", "Design systems"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Cloud Security Engineer",
+    "description": "Design and implement security measures for cloud environments.",
+    "traits": ["technical", "analytical", "problem-solving"],
+    "averageSalary": "$120,000",
+    "workload": "High",
+    "futureScope": "Rapidly growing field with high demand.",
+    "howToStart": "Learn cloud computing and security principles.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic cloud concepts", "Security fundamentals", "Networking basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Cloud security best practices", "Identity and access management", "Incident response"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Security architecture", "Compliance and regulations", "Threat modeling"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Mobile App Developer",
+    "description": "Design and develop mobile applications.",
+    "traits": ["technical", "problem-solving", "creative"],
+    "averageSalary": "$85,000",
+    "workload": "High and deadline-driven",
+    "futureScope": "Growing demand in mobile technology.",
+    "howToStart": "Learn programming languages and mobile development frameworks.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic programming (Java, Swift)", "Mobile app design principles", "Development tools"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Cross-platform development", "APIs", "User experience design"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["App monetization strategies", "Performance optimization", "App store submission"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Blockchain Developer",
+    "description": "Develop and maintain blockchain applications.",
+    "traits": ["technical", "problem-solving", "analytical"],
+    "averageSalary": "$120,000",
+    "workload": "High",
+    "futureScope": "Rapidly growing field with high demand.",
+    "howToStart": "Learn blockchain principles and programming languages.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic blockchain concepts", "Smart contracts", "Cryptography basics"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Ethereum development", "DApps", "Blockchain security"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Consensus algorithms", "Scalability solutions", "Blockchain architecture"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Game Developer",
+    "description": "Design and develop video games.",
+    "traits": ["creative", "technical", "problem-solving"],
+    "averageSalary": "$80,000",
+    "workload": "High and deadline-driven",
+    "futureScope": "Growing demand in gaming industry.",
+    "howToStart": "Learn programming languages and game development tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic programming (C#, C++)", "Game design principles", "Game engines (Unity, Unreal)"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Game physics", "AI in games", "Multiplayer game development"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced graphics programming", "Game monetization strategies", "Virtual reality development"]
+      }
+    ]
+  }
+  ,
+  {
+    "name": "Financial Analyst",
+    "description": "Analyze financial data to help organizations make informed decisions.",
+    "traits": ["analytical", "detail-oriented", "problem-solving"],
+    "averageSalary": "$80,000",
+    "workload": "Moderate to high",
+    "futureScope": "Steady demand in finance and investment sectors.",
+    "howToStart": "Learn financial analysis principles and tools.",
+    "roadmap": [
+      {
+        "level": "Beginner",
+        "steps": ["Basic accounting principles", "Financial modeling basics", "Excel for finance"]
+      },
+      {
+        "level": "Intermediate",
+        "steps": ["Investment analysis", "Risk management", "Financial reporting"]
+      },
+      {
+        "level": "Advanced",
+        "steps": ["Advanced financial modeling", "Portfolio management", "Valuation techniques"]
+      }
+    ]
+  }
+]
