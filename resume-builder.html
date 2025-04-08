@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="assets/css/resume-builder.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your Resume</h1>
+
+    <div class="resume-form">
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="text" id="title" placeholder="Professional Title">
+      <input type="text" id="email" placeholder="Email">
+      <input type="text" id="phone" placeholder="Phone">
+      <textarea id="summary" placeholder="Professional Summary"></textarea>
+      
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" accept="image/*">
+
+      <textarea id="experience" placeholder="Experience (e.g., Company, Role, Duration)"></textarea>
+      <textarea id="education" placeholder="Education (e.g., Degree, School, Year)"></textarea>
+      <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
+
+      <button onclick="downloadResume()">Download PDF</button>
+    </div>
+
+    <div class="resume-preview" id="resume-preview">
+      <div class="resume-card" id="resume-card">
+        <div class="header">
+          <img id="profile-pic" src="" alt="Profile Picture" style="display: none;" />
+          <h2 id="preview-name">Your Name</h2>
+          <p id="preview-title">Your Title</p>
+        </div>
+        <div class="contact">
+          <p><strong>Email:</strong> <span id="preview-email"></span></p>
+          <p><strong>Phone:</strong> <span id="preview-phone"></span></p>
+        </div>
+        <div class="section">
+          <h3>Summary</h3>
+          <p id="preview-summary"></p>
+        </div>
+        <div class="section">
+          <h3>Experience</h3>
+          <p id="preview-experience"></p>
+        </div>
+        <div class="section">
+          <h3>Education</h3>
+          <p id="preview-education"></p>
+        </div>
+        <div class="section">
+          <h3>Skills</h3>
+          <ul id="preview-skills"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="assets/js/resume-builder.js"></script>
+</body>
+</html>
