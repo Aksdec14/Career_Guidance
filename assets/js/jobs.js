@@ -1,4 +1,4 @@
-const API_BASE = 'https://career-guidance-3lb7.onrender.com';
+const API_BASE = 'https://career-guidance-6ocm.onrender.com';
 
 const searchInput = document.getElementById('query');
 const locationInput = document.getElementById('location');
