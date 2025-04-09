@@ -1,125 +1,160 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+/* Quiz Container */
+.quiz-container {
+  background-color: #1e2a38;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.quiz-container h1 {
+  text-align: center;
+  color: #00c3ff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Questions */
+.question {
+  margin-bottom: 2rem;
+  background-color: #2a3d52;
+  padding: 1.2rem;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.question:hover {
+  background-color: #32495f;
+}
+
+.question p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #00ffcc;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #00c3ff;
+}
+
+label:hover {
+  color: #00c3ff;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 1.5rem;
+  background-color: #00c3ff;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #01b3e3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive - Tablets */
+@media (max-width: 768px) {
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #141e30, #243b55);
-    color: #fff;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2rem;
+    padding: 1.5rem;
   }
-  
-  /* Quiz Container */
+
   .quiz-container {
-    background-color: #1e2a38;
-    padding: 2rem 2.5rem;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 800px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    animation: fadeIn 0.6s ease-in-out;
+    padding: 1.5rem 2rem;
   }
-  
+
   .quiz-container h1 {
-    text-align: center;
-    color: #00c3ff;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
-  
-  /* Questions */
-  .question {
-    margin-bottom: 2rem;
-    background-color: #2a3d52;
-    padding: 1.2rem;
-    border-radius: 10px;
-    transition: background 0.3s ease;
-  }
-  
-  .question:hover {
-    background-color: #32495f;
-  }
-  
+
   .question p {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: #00ffcc;
+    font-size: 1rem;
   }
-  
+
   label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-    cursor: pointer;
-    transition: color 0.3s;
+    font-size: 0.9rem;
   }
-  
-  input[type="radio"] {
-    margin-right: 8px;
-    accent-color: #00c3ff;
-  }
-  
-  label:hover {
-    color: #00c3ff;
-  }
-  
-  /* Submit Button */
+
   button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    margin-top: 1.5rem;
-    background-color: #00c3ff;
-    color: #000;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    font-size: 1rem;
   }
-  
-  button[type="submit"]:hover {
-    background-color: #01b3e3;
+}
+
+/* Responsive - Phones */
+@media (max-width: 480px) {
+  .quiz-container {
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
   }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+  .quiz-container h1 {
+    font-size: 1.5rem;
   }
-  
-  /* Responsive */
-  @media (max-width: 600px) {
-    .quiz-container {
-      padding: 1.5rem;
-    }
-  
-    .question p {
-      font-size: 1rem;
-    }
-  
-    label {
-      font-size: 0.9rem;
-    }
-  
-    button[type="submit"] {
-      font-size: 1rem;
-    }
+
+  .question {
+    padding: 1rem;
   }
-  
+
+  .question p {
+    font-size: 0.95rem;
+  }
+
+  label {
+    font-size: 0.85rem;
+  }
+
+  button[type="submit"] {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
