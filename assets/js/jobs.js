@@ -1,87 +1,124 @@
-const jobListingsContainer = document.getElementById("job-listings");
-const searchInput = document.getElementById("jobSearchInput");
+const API_BASE = 'http://localhost:5000';
 
-// ✅ Render backend URL
-const apiUrl = 'https://career-guidance-16f0.onrender.com/api/jobs';
+const searchInput = document.getElementById('query');
+const locationInput = document.getElementById('location');
+const categorySelect = document.getElementById('category');
+const contractTypeSelect = document.getElementById('contract_type');
+const minSalaryInput = document.getElementById('min_salary');
+const maxSalaryInput = document.getElementById('max_salary');
+const minVal = document.getElementById('minVal');
+const maxVal = document.getElementById('maxVal');
+const searchBtn = document.getElementById('search');
+const results = document.getElementById('results');
+const pageSpan = document.getElementById('page');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const suggestions = document.getElementById('location-suggestions');
 
-async function fetchJobs(query = "software developer", location = "India") {
-  jobListingsContainer.innerHTML = `<div class="loader"></div>`;
+let currentPage = 1;
 
-  // Filter handling
-  let filters = [];
-  if (document.getElementById("remoteFilter").checked) filters.push("remote");
-  if (document.getElementById("fullTimeFilter").checked) filters.push("full-time");
-  if (document.getElementById("partTimeFilter").checked) filters.push("part-time");
-  if (document.getElementById("internshipFilter").checked) filters.push("internship");
-
-  const filterQuery = filters.length ? query + " " + filters.join(" ") : query;
-
-  const url = `${apiUrl}?query=${encodeURIComponent(filterQuery)}&location=${encodeURIComponent(location)}&page=1&num_pages=1`;
-
+// Fetch job categories
+async function fetchCategories() {
   try {
-    const response = await fetch(url);
-    const data = await response.json();
-
-    displayJobs(data.data);
-  } catch (error) {
-    jobListingsContainer.innerHTML = "<p>Failed to fetch jobs. Please try again later.</p>";
-    console.error("Error fetching jobs:", error);
+    const res = await fetch(`${API_BASE}/api/categories`);
+    const data = await res.json();
+    data.results.forEach(cat => {
+      const option = document.createElement('option');
+      option.value = cat.tag;
+      option.textContent = cat.label;
+      categorySelect.appendChild(option);
+    });
+  } catch (err) {
+    console.error('Failed to load categories:', err);
   }
 }
 
-function displayJobs(jobs) {
-  if (!jobs || jobs.length === 0) {
-    jobListingsContainer.innerHTML = "<p>No jobs found.</p>";
+// Location autosuggestions
+locationInput.addEventListener('input', async () => {
+  const val = locationInput.value;
+  if (val.length < 2) return;
+
+  try {
+    const res = await fetch(`${API_BASE}/api/locations?location=${encodeURIComponent(val)}`);
+    const data = await res.json();
+    suggestions.innerHTML = '';
+    data.results.forEach(loc => {
+      const option = document.createElement('option');
+      option.value = loc.display_name;
+      suggestions.appendChild(option);
+    });
+  } catch (err) {
+    console.error('Location suggestion error:', err);
+  }
+});
+
+// Salary sliders
+minSalaryInput.oninput = () => (minVal.textContent = minSalaryInput.value);
+maxSalaryInput.oninput = () => (maxVal.textContent = maxSalaryInput.value);
+
+// Fetch jobs
+async function fetchJobs(page = 1) {
+  const params = new URLSearchParams({
+    query: searchInput.value,
+    location: locationInput.value,
+    category: categorySelect.value,
+    min_salary: minSalaryInput.value,
+    max_salary: maxSalaryInput.value,
+    contract_type: contractTypeSelect.value,
+    page
+  });
+
+  try {
+    const res = await fetch(`${API_BASE}/api/jobs?${params.toString()}`);
+    const data = await res.json();
+    renderJobs(data.results || []);
+    pageSpan.textContent = currentPage;
+  } catch (err) {
+    console.error('Job fetch error:', err);
+    results.innerHTML = '<p>Error loading jobs. Please try again later.</p>';
+  }
+}
+
+// Render job cards
+function renderJobs(jobs) {
+  results.innerHTML = '';
+
+  if (!jobs.length) {
+    results.innerHTML = '<p>No jobs found.</p>';
     return;
   }
 
-  jobListingsContainer.innerHTML = "";
-
-  jobs.forEach((job) => {
-    const jobEl = document.createElement("div");
-    jobEl.classList.add("job-listing");
-
-    jobEl.innerHTML = `
-      <div class="job-header">
-        <span><strong>${job.job_title}</strong> at ${job.employer_name}</span>
-        <span class="arrow">&#9660;</span>
-      </div>
-      <div class="job-details">
-        <p><strong>Location:</strong> ${job.job_city || 'Not specified'}</p>
-        <p><strong>Description:</strong> ${job.job_description?.slice(0, 200) || 'No description'}...</p>
-        <p><strong>Apply:</strong> <a href="${job.job_apply_link}" target="_blank">Click here</a></p>
-      </div>
+  jobs.forEach(job => {
+    const div = document.createElement('div');
+    div.className = 'job-card';
+    div.innerHTML = `
+      <h3>${job.title}</h3>
+      <p><strong>${job.company?.display_name || 'Unknown Company'}</strong> — ${job.location?.display_name || 'N/A'}</p>
+      <p>${job.description?.substring(0, 200) || 'No description'}...</p>
+      <a href="${job.redirect_url}" target="_blank" class="apply-link">Apply</a>
     `;
-
-    jobListingsContainer.appendChild(jobEl);
-
-    const header = jobEl.querySelector(".job-header");
-    const details = jobEl.querySelector(".job-details");
-
-    header.addEventListener("click", () => {
-      header.classList.toggle("active");
-      details.classList.toggle("show");
-    });
+    results.appendChild(div);
   });
 }
 
-// Search input listener
-searchInput.addEventListener("input", () => {
-  const query = searchInput.value.trim();
-  if (query.length > 2) {
-    fetchJobs(query);
-  } else {
-    fetchJobs();
+// Event listeners
+searchBtn.addEventListener('click', () => {
+  currentPage = 1;
+  fetchJobs(currentPage);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentPage++;
+  fetchJobs(currentPage);
+});
+
+prevBtn.addEventListener('click', () => {
+  if (currentPage > 1) {
+    currentPage--;
+    fetchJobs(currentPage);
   }
 });
 
-// Filter checkboxes listener
-document.querySelectorAll('.job-filters input').forEach(input => {
-  input.addEventListener("change", () => {
-    const query = searchInput.value.trim() || "software developer";
-    fetchJobs(query);
-  });
-});
-
-// Initial fetch
-fetchJobs();
+// Initialize
+fetchCategories();
+fetchJobs(currentPage);
