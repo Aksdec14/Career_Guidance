@@ -46,7 +46,7 @@ authForm.addEventListener('submit', async (e) => {
   const endpoint = isLogin ? '/login' : '/signup';
 
   try {
-    const res = await fetch(`http://localhost:3000${endpoint}`, {
+    const res = await fetch(`https://career-guidance-6ocm.onrender.com${endpoint}`, {  // Updated URL
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
