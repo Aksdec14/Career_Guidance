@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
@@ -22,8 +21,7 @@ app.get('/api/jobs', async (req, res) => {
     results_per_page = 10,
     category,
     min_salary,
-    max_salary,
-    contract_type
+    max_salary
   } = req.query;
 
   const url = `https://api.adzuna.com/v1/api/jobs/${COUNTRY}/search/${page}`;
@@ -35,8 +33,7 @@ app.get('/api/jobs', async (req, res) => {
     results_per_page,
     ...(category && { category }),
     ...(min_salary && { salary_min: min_salary }),
-    ...(max_salary && { salary_max: max_salary }),
-    ...(contract_type && { contract_type })
+    ...(max_salary && { salary_max: max_salary })
   };
 
   try {
