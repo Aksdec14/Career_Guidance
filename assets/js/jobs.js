@@ -3,7 +3,6 @@ const API_BASE = 'https://career-guidance-3lb7.onrender.com';
 const searchInput = document.getElementById('query');
 const locationInput = document.getElementById('location');
 const categorySelect = document.getElementById('category');
-const contractTypeSelect = document.getElementById('contract_type');
 const minSalaryInput = document.getElementById('min_salary');
 const maxSalaryInput = document.getElementById('max_salary');
 const minVal = document.getElementById('minVal');
@@ -64,7 +63,6 @@ async function fetchJobs(page = 1) {
     category: categorySelect.value,
     min_salary: minSalaryInput.value,
     max_salary: maxSalaryInput.value,
-    contract_type: contractTypeSelect.value,
     page
   });
 
