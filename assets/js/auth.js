@@ -55,7 +55,6 @@ authForm.addEventListener('submit', async (e) => {
     const msg = await res.text();
 
     if (res.ok) {
-      alert(msg);
       window.location.href = 'quiz.html'; // redirect on success
     } else {
       alert(`Error: ${msg}`);
