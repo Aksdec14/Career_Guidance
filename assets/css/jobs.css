@@ -71,12 +71,15 @@ h1 {
   color: #00ffcc;
 }
 
-/* Job Results */
+/* Job Results Grid */
 .job-results {
   display: grid;
   gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 100%;
 }
 
+/* Job Card */
 .job-card {
   background: #1e2a38;
   padding: 20px;
@@ -84,6 +87,8 @@ h1 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   animation: fadeIn 0.4s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .job-card:hover {
@@ -104,11 +109,35 @@ h1 {
 }
 
 .job-card a {
-  display: inline-block;
   margin-top: 10px;
   color: #00ffcc;
   text-decoration: underline;
   font-weight: 500;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.badge.salary {
+  background-color: #00c3ff;
+  color: #000;
+}
+
+.badge.contract {
+  background-color: #00ffcc;
+  color: #000;
+}
+
+.posted-date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 5px;
 }
 
 /* Pagination */
@@ -143,7 +172,7 @@ h1 {
   color: #00ffcc;
 }
 
-/* Animations */
+/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -155,14 +184,16 @@ h1 {
   }
 }
 
-/* Responsive Tweaks */
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .job-results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   body {
     padding: 15px;
-  }
-
-  .container {
-    padding: 0 1rem;
   }
 
   h1 {
@@ -172,6 +203,10 @@ h1 {
   .filters {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     padding: 15px;
+  }
+
+  .job-results {
+    grid-template-columns: 1fr;
   }
 
   .job-card {
@@ -194,27 +229,6 @@ h1 {
 
   .filters {
     grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .filters input,
-  .filters select,
-  .filters button {
-    font-size: 0.95rem;
-    padding: 8px;
-  }
-
-  .job-card h3 {
-    font-size: 1rem;
-  }
-
-  .pagination {
-    gap: 8px;
-  }
-
-  .pagination button,
-  .pagination span {
-    font-size: 0.95rem;
-    padding: 8px 12px;
+    padding: 10px;
   }
 }
