@@ -105,7 +105,6 @@ body {
 
 #compare-table table {
   width: 100%;
-  min-width: 600px;
   border-collapse: collapse;
   font-size: 1rem;
   color: #ffffff;
@@ -116,7 +115,7 @@ body {
   padding: 15px 20px;
   text-align: left;
   border: 1px solid #00c3ff;
-  word-break: break-word;
+  word-wrap: break-word;
 }
 
 #compare-table th {
@@ -194,13 +193,23 @@ body {
 
   .comparison-form {
     flex-direction: column;
-    align-items: stretch;
     gap: 15px;
+    align-items: stretch;
+  }
+
+  #compare-table {
+    font-size: 0.95rem;
+    width: 100%;
   }
 
   #compare-table table {
-    font-size: 0.95rem;
-    min-width: unset;
+    width: 100%;
+    min-width: 600px;
+  }
+
+  #compare-table th,
+  #compare-table td {
+    padding: 10px;
   }
 }
 
@@ -220,7 +229,7 @@ body {
 
   #compare-table th,
   #compare-table td {
-    padding: 10px;
+    padding: 8px;
   }
 
   .back-button {
