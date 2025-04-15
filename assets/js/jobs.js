@@ -16,7 +16,7 @@ const suggestions = document.getElementById('location-suggestions');
 
 let currentPage = 1;
 
-// Fetch job categories
+// Fetch categories
 async function fetchCategories() {
   try {
     const res = await fetch(`${API_BASE}/api/categories`);
@@ -32,9 +32,9 @@ async function fetchCategories() {
   }
 }
 
-// Location autosuggestions
+// Location suggestions
 locationInput.addEventListener('input', async () => {
-  const val = locationInput.value;
+  const val = locationInput.value.trim();
   if (val.length < 2) return;
 
   try {
@@ -58,8 +58,8 @@ maxSalaryInput.oninput = () => (maxVal.textContent = maxSalaryInput.value);
 // Fetch jobs
 async function fetchJobs(page = 1) {
   const params = new URLSearchParams({
-    query: searchInput.value,
-    location: locationInput.value,
+    query: searchInput.value.trim(),
+    location: locationInput.value.trim(),
     category: categorySelect.value,
     min_salary: minSalaryInput.value,
     max_salary: maxSalaryInput.value,
@@ -87,15 +87,29 @@ function renderJobs(jobs) {
   }
 
   jobs.forEach(job => {
-    const div = document.createElement('div');
-    div.className = 'job-card';
-    div.innerHTML = `
+    const card = document.createElement('div');
+    card.className = 'job-card';
+
+    let jobLocation = job.location?.display_name || 'N/A';
+    const locationParts = jobLocation.split(', ');
+    jobLocation = locationParts.slice(0, -1).join(', '); // Remove country
+
+    const salaryBadge = job.salary ? `<span class="badge salary">${job.salary}</span>` : '';
+    const contractBadge = job.contract_type ? `<span class="badge contract">${job.contract_type}</span>` : '';
+    const postedDate = job.created ? new Date(job.created).toLocaleDateString() : 'N/A';
+
+    card.innerHTML = `
       <h3>${job.title}</h3>
-      <p><strong>${job.company?.display_name || 'Unknown Company'}</strong> — ${job.location?.display_name || 'N/A'}</p>
+      <p><strong>${job.company?.display_name || 'Unknown Company'}</strong> — ${jobLocation}</p>
       <p>${job.description?.substring(0, 200) || 'No description'}...</p>
+      <div class="badges">
+        ${salaryBadge} ${contractBadge}
+      </div>
+      <p class="posted-date">Posted on: ${postedDate}</p>
       <a href="${job.redirect_url}" target="_blank" class="apply-link">Apply</a>
     `;
-    results.appendChild(div);
+
+    results.appendChild(card);
   });
 }
 
@@ -117,6 +131,6 @@ prevBtn.addEventListener('click', () => {
   }
 });
 
-// Initialize
+// Init
 fetchCategories();
 fetchJobs(currentPage);
