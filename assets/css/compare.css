@@ -1,227 +1,230 @@
-/* assets/css/compare.css */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #141e30, #243b55);
-    color: #ffffff;
-    padding: 2rem;
-    box-sizing: border-box;
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #ffffff;
+  padding: 2rem;
+}
+
+/* Navbar */
 .navbar {
-    background-color: #1e2a38;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #00c3ff;
-    flex-wrap: wrap;
+  background-color: #1e2a38;
+  padding: 15px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #00c3ff;
 }
 
 .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #00c3ff;
-    flex: 1 1 100%;
-    text-align: center;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00c3ff;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .navbar .nav-links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    flex: 1 1 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0;
 }
 
 .navbar .nav-links li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navbar .nav-links li a:hover {
-    color: #00ffcc;
+  color: #00ffcc;
 }
 
+/* Main Container */
 .container {
-    max-width: 1000px;
-    margin: auto;
-    background: #1e2a38;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
+  max-width: 1000px;
+  margin: auto;
+  background: #1e2a38;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .container h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: #00c3ff;
+  font-size: 2rem;
+  text-align: center;
+  color: #00c3ff;
+  margin-bottom: 1rem;
 }
 
 .container p {
-    text-align: center;
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #d0e7ff;
+  text-align: center;
+  font-size: 1rem;
+  color: #d0e7ff;
+  margin-bottom: 1.5rem;
 }
 
-/* Dropdowns */
+/* Dropdown Form */
 .comparison-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 
 .comparison-form select {
-    padding: 10px 15px;
-    font-size: 1rem;
-    background: #243b55;
-    color: #ffffff;
-    border: 2px solid #00c3ff;
-    border-radius: 6px;
-    min-width: 200px;
-    width: 100%;
-    max-width: 300px;
-    box-sizing: border-box;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background: #243b55;
+  color: #ffffff;
+  border: 2px solid #00c3ff;
+  border-radius: 6px;
+  min-width: 200px;
+  width: 100%;
+  max-width: 300px;
 }
 
-/* Table Styles */
+/* Table Section */
 #compare-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #ffffff;
-    overflow-x: auto;
-    display: block;
+  overflow-x: auto;
 }
 
 #compare-table table {
-    width: 100%;
-    min-width: 600px;
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #ffffff;
 }
 
 #compare-table th,
 #compare-table td {
-    padding: 15px 20px;
-    text-align: left;
-    border: 1px solid #00c3ff;
-    word-wrap: break-word;
+  padding: 15px 20px;
+  text-align: left;
+  border: 1px solid #00c3ff;
+  word-break: break-word;
 }
 
 #compare-table th {
-    background-color: #2a3d52;
-    color: #00ffcc;
-    font-weight: 600;
+  background-color: #2a3d52;
+  color: #00ffcc;
+  font-weight: 600;
 }
 
 #compare-table tr:nth-child(even) {
-    background-color: #223446;
+  background-color: #223446;
 }
 
 #compare-table tr:hover {
-    background-color: #2c445e;
+  background-color: #2c445e;
 }
 
 /* Back Button */
 .back-button {
-    display: inline-block;
-    margin-top: 30px;
-    text-decoration: none;
-    padding: 10px 20px;
-    background: #00c3ff;
-    color: #000;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background 0.3s ease;
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #00c3ff;
+  color: #000;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .back-button:hover {
-    background: #00ffcc;
+  background: #00ffcc;
 }
 
-/* Responsive Enhancements */
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
-    body {
-        padding: 1.5rem;
-    }
+  body {
+    padding: 1.5rem;
+  }
 
-    .container {
-        padding: 1.5rem;
-    }
+  .container {
+    padding: 1.5rem;
+  }
 
-    .navbar .logo {
-        font-size: 1.4rem;
-    }
+  .navbar .logo {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 1rem;
-    }
+  body {
+    padding: 1rem;
+  }
 
-    .container {
-        padding: 1rem;
-    }
+  .container {
+    padding: 1rem;
+  }
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .navbar .logo {
-        text-align: left;
-        margin-bottom: 10px;
-    }
+  .navbar .logo {
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+  }
 
-    .navbar .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        gap: 10px;
-    }
+  .navbar .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
 
-    .comparison-form {
-        flex-direction: column;
-        gap: 15px;
-    }
+  .comparison-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
 
-    #compare-table {
-        font-size: 0.9rem;
-    }
+  #compare-table table {
+    font-size: 0.95rem;
+    min-width: unset;
+  }
 }
 
 @media (max-width: 480px) {
-    .navbar .logo {
-        font-size: 1.2rem;
-    }
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
 
-    .container h1 {
-        font-size: 1.5rem;
-    }
+  .container h1 {
+    font-size: 1.5rem;
+  }
 
-    .comparison-form select {
-        font-size: 0.95rem;
-        padding: 8px 12px;
-    }
+  .comparison-form select {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
 
-    #compare-table th,
-    #compare-table td {
-        padding: 10px;
-    }
+  #compare-table th,
+  #compare-table td {
+    padding: 10px;
+  }
 
-    .back-button {
-        padding: 8px 16px;
-        font-size: 0.95rem;
-    }
+  .back-button {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
 }
