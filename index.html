@@ -2,63 +2,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Guidance</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Guidance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body>
+<body class="bg-black text-white font-sans leading-relaxed">
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Career Guide</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="recommendation.html">Recommendations</a></li>
-                <li><a href="roadmap.html">Roadmaps</a></li>
-                <li><a href="compare.html">Compare Careers / Resume Builder</a></li>
-            </ul>
+  <!-- Navbar -->
+  <header class="py-4 bg-black sm:py-6 shadow-md sticky top-0 z-50" x-data="{ expanded: false }">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        <div class="shrink-0">
+          <a href="index.html" class="text-2xl font-bold text-white hover:text-[#00c3ff]">Career Guide</a>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h2>Find the Right Career for You</h2>
-            <p>Take our quiz, explore career paths, and get personalized recommendations to shape your future.</p>
-            <a href="auth.html" class="btn">Start Career Quiz</a>
+        <!-- Mobile Toggle -->
+        <div class="flex md:hidden">
+          <button type="button" class="text-white" @click="expanded = !expanded" :aria-expanded="expanded">
+            <span x-show="!expanded">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </span>
+            <span x-show="expanded">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </span>
+          </button>
         </div>
-    </header>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">How We Help</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Personalized Career Suggestions</h3>
-                    <p>We analyze your skills and interests to recommend the best career paths for you.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Roadmaps to Success</h3>
-                    <p>Follow structured career roadmaps to build skills and grow in your chosen field.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Compare Careers</h3>
-                    <p>Evaluate different careers side by side based on salary, work-life balance, and growth.</p>
-                </div>
-            </div>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex md:items-center md:space-x-8">
+          <a href="index.html" class="text-gray-400 hover:text-white transition">Home</a>
+          <a href="recommendation.html" class="text-gray-400 hover:text-white transition">Recommendations</a>
+          <a href="roadmap.html" class="text-gray-400 hover:text-white transition">Roadmaps</a>
+          <a href="compare.html" class="text-gray-400 hover:text-white transition">Compare / Resume Builder</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav x-show="expanded" x-collapse class="md:hidden">
+        <div class="flex flex-col pt-8 pb-4 space-y-6">
+          <a href="index.html" class="text-gray-400 hover:text-white transition">Home</a>
+          <a href="recommendation.html" class="text-gray-400 hover:text-white transition">Recommendations</a>
+          <a href="roadmap.html" class="text-gray-400 hover:text-white transition">Roadmaps</a>
+          <a href="compare.html" class="text-gray-400 hover:text-white transition">Compare / Resume Builder</a>
         </div>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Job Section -->
-    <section class="explore-jobs">
-        <a href="jobs.html" class="btn explore-btn">Explore Jobs</a>
-      </section>      
+  <!-- Hero Section -->
+  <section class="py-20 bg-black text-center px-4">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-sm uppercase tracking-widest text-gray-300">Your Future Starts Here</p>
+      <h1 class="mt-6 text-5xl sm:text-6xl font-bold text-white">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">Find the Right Career for You</span>
+      </h1>
+      <p class="mt-6 text-lg text-gray-400 mb-6" id="typewriter-text"></p> <!-- Placeholder for typewriter text -->
 
-    <script src="assets/js/script.js"></script>
+      <!-- Start Career Quiz Button -->
+      <a href="auth.html" class="mt-8 inline-block bg-[#00c3ff] hover:bg-[#00a0d1] text-black font-semibold py-3 px-6 rounded-lg transition">Start Career Quiz</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 bg-[#0e1a25]">
+    <div class="px-4 mx-auto max-w-7xl">
+      <h2 class="text-center text-3xl font-semibold text-white mb-12">How We Help</h2>
+      <div class="grid gap-10 md:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="bg-[#182937] rounded-2xl p-6 shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://img.icons8.com/color/96/000000/futurama-bender.png" alt="AI" class="mx-auto mb-4 w-16 h-16">
+          <h3 class="text-xl font-bold text-[#00c3ff] mb-2 text-center">Personalized Career Suggestions</h3>
+          <p class="text-gray-300 text-sm text-center">Our AI analyzes your skills, interests, and goals to recommend careers tailored just for you.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-[#182937] rounded-2xl p-6 shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://img.icons8.com/color/96/000000/task.png" alt="Roadmap" class="mx-auto mb-4 w-16 h-16">
+          <h3 class="text-xl font-bold text-[#00c3ff] mb-2 text-center">Roadmaps to Success</h3>
+          <p class="text-gray-300 text-sm text-center">Step-by-step roadmaps to guide you from learning the basics to mastering your chosen field.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-[#182937] rounded-2xl p-6 shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://i.pinimg.com/736x/37/59/1d/37591d54dc1ebddf74e607f251e9fd51.jpg" alt="Compare" class="mx-auto mb-4 w-16 h-16">
+          <h3 class="text-xl font-bold text-[#00c3ff] mb-2 text-center">Career Comparison</h3>
+          <p class="text-gray-300 text-sm text-center">Compare job options by salary, demand, lifestyle, and growth to make confident decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore Jobs Section -->
+  <section class="py-20 bg-black text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl font-semibold text-white mb-6">Ready to Explore Opportunities?</h2>
+      <p class="text-gray-400 mb-8">Browse thousands of job listings that align with your interests and career goals.</p>
+      <a href="jobs.html" class="bg-[#00c3ff] hover:bg-[#00a0d1] text-black font-bold py-3 px-8 rounded-lg shadow-lg transform transition hover:-translate-y-1 text-lg">Explore Jobs</a>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const lines = [
+        "Take our personalized quiz, explore roadmaps, and build a future that excites you.",
+        "Uncover career paths based on your skills, interests, and goals.",
+        "Explore opportunities that align with your passions and aspirations.",
+        "Shape your future with actionable steps and career planning tools."
+      ];
+
+      let lineIndex = 0;
+      let charIndex = 0;
+      const typingSpeed = 100;
+      const typewriterElement = document.getElementById('typewriter-text');
+
+      function typeWriter() {
+        if (charIndex < lines[lineIndex].length) {
+          typewriterElement.textContent += lines[lineIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriter, typingSpeed);
+        } else {
+          // Move to the next line after the current line is fully typed
+          setTimeout(() => {
+            lineIndex++;
+            charIndex = 0;
+            if (lineIndex < lines.length) {
+              typewriterElement.textContent = ''; // Clear text for next line
+              typeWriter(); // Start typing the next line
+            }
+          }, 2000); // Wait for a brief moment before starting the next line
+        }
+      }
+
+      // Start typing effect when the page loads
+      typeWriter();
+    });
+  </script>
 
 </body>
 
