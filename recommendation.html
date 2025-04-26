@@ -33,6 +33,7 @@
       background-color: #1c2736;
       padding: 1rem 2rem;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      position: relative;
     }
 
     .navbar .container {
@@ -67,6 +68,30 @@
     .nav-links .active {
       background-color: #00c3ff;
       color: #000;
+    }
+
+    /* Mobile Smooth Menu */
+    @media (max-width: 480px) {
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+      }
+
+      .navbar.active .nav-links {
+        display: flex;
+        max-height: 500px;
+        transition: max-height 0.4s ease-in;
+      }
+
+      .menu-icon {
+        display: block;
+        font-size: 1.8rem;
+        color: #00c3ff;
+        cursor: pointer;
+      }
     }
 
     /* Main Container */
@@ -198,7 +223,7 @@
       }
     }
 
-    /* Mobile Responsive */
+    /* Mobile Specific */
     @media (max-width: 480px) {
       .container {
         padding: 1rem;
@@ -234,27 +259,23 @@
         text-align: center;
         padding: 0.75rem 1rem;
       }
-
-      /* Add Mobile Menu for Navbar */
-      .nav-links {
-        display: none; /* Start with hidden menu */
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .navbar .menu-icon {
-        display: block;
-        cursor: pointer;
-      }
-
-      .navbar.active .nav-links {
-        display: flex;
-      }
     }
   </style>
 
   <!-- JS -->
   <script defer src="assets/js/recommendation.js"></script>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuIcon = document.querySelector('.menu-icon');
+      const navbar = document.querySelector('.navbar');
+
+      menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+      });
+    });
+  </script>
 
 </head>
 
@@ -264,6 +285,7 @@
   <nav class="navbar shadow-lg p-4 bg-[#1e2a38] bg-opacity-80">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="logo text-[#00c3ff] text-3xl font-bold">Career Guide</h1>
+      <i class="fas fa-bars menu-icon"></i> <!-- Added hamburger icon -->
       <ul class="nav-links flex space-x-6 text-lg">
         <li><a href="index.html" class="hover:text-[#00c3ff]">Home</a></li>
         <li><a href="recommendation.html" class="active text-[#00c3ff]">Recommendations</a></li>
