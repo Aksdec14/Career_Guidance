@@ -1,63 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-black text-white">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Career Quiz</title>
-  <link rel="stylesheet" href="assets/css/quiz.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="assets/js/quiz.js"></script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+  </style>
 </head>
-<body>
+<body class="min-h-screen bg-black text-white relative overflow-hidden">
 
-  <div class="quiz-container">
-    <h1>Career Personality Quiz</h1>
-    <form id="quiz-form">
-      
-      <div class="question">
-        <p>1. What do you enjoy doing the most?</p>
-        <label><input type="radio" name="q1" value="creative"> Designing or Creating</label><br />
-        <label><input type="radio" name="q1" value="tech-savvy"> Working with technology</label><br />
-        <label><input type="radio" name="q1" value="problem-solving"> Solving complex problems</label>
-      </div>
-
-      <div class="question">
-        <p>2. What is your strongest skill?</p>
-        <label><input type="radio" name="q2" value="communication"> Communication</label><br />
-        <label><input type="radio" name="q2" value="analytical"> Analytical thinking</label><br />
-        <label><input type="radio" name="q2" value="teamwork"> Teamwork</label>
-      </div>
-
-      <div class="question">
-        <p>3. What environment do you prefer?</p>
-        <label><input type="radio" name="q3" value="independent"> Working independently</label><br />
-        <label><input type="radio" name="q3" value="collaborative"> Working with a team</label><br />
-        <label><input type="radio" name="q3" value="flexible"> Flexible work environments</label>
-      </div>
-
-      <div class="question">
-        <p>4. Which activity sounds most appealing?</p>
-        <label><input type="radio" name="q4" value="research"> Research and learning</label><br />
-        <label><input type="radio" name="q4" value="design"> Designing user experiences</label><br />
-        <label><input type="radio" name="q4" value="data"> Working with numbers and data</label>
-      </div>
-
-      <div class="question">
-        <p>5. How do you approach problems?</p>
-        <label><input type="radio" name="q5" value="logical"> Break it down logically</label><br />
-        <label><input type="radio" name="q5" value="experimental"> Try different creative ideas</label><br />
-        <label><input type="radio" name="q5" value="collaborative"> Ask others for input</label>
-      </div>
-
-      <div class="question">
-        <p>6. What's your preferred work style?</p>
-        <label><input type="radio" name="q6" value="organized"> Following structure and routines</label><br />
-        <label><input type="radio" name="q6" value="adaptable"> Go with the flow and adapt</label><br />
-        <label><input type="radio" name="q6" value="innovative"> Break the rules, innovate</label>
-      </div>
-
-      <button type="submit">Submit Quiz</button>
-    </form>
+  <!-- Background Image Layer -->
+  <div class="absolute inset-0 z-0">
+    <img src="https://i.pinimg.com/736x/e0/14/eb/e014eb47c657d7c0f8009c92edb134ed.jpg" 
+         alt="Background" 
+         class="w-full h-full object-cover opacity-20" />
   </div>
 
+  <!-- Quiz Content -->
+  <div class="relative z-10 flex items-center justify-center w-full min-h-screen p-4">
+    <div class="quiz-container w-full max-w-3xl bg-[#111827] bg-opacity-50 p-8 rounded-2xl shadow-xl border border-[#00c3ff] fade-in">
+      <h1 class="text-3xl font-bold mb-8 text-[#00c3ff] text-center">Career Personality Quiz</h1>
+
+      <form id="quiz-form" class="space-y-8">
+        <!-- Question 1 -->
+        <div class="question space-y-3">
+          <p class="text-lg font-semibold">1. What do you enjoy doing the most?</p>
+          <label class="block"><input type="radio" name="q1" value="creative" class="mr-2 accent-[#00c3ff]"> Designing or Creating</label>
+          <label class="block"><input type="radio" name="q1" value="tech-savvy" class="mr-2 accent-[#00c3ff]"> Working with technology</label>
+          <label class="block"><input type="radio" name="q1" value="problem-solving" class="mr-2 accent-[#00c3ff]"> Solving complex problems</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question space-y-3">
+          <p class="text-lg font-semibold">2. What is your strongest skill?</p>
+          <label class="block"><input type="radio" name="q2" value="communication" class="mr-2 accent-[#00c3ff]"> Communication</label>
+          <label class="block"><input type="radio" name="q2" value="analytical" class="mr-2 accent-[#00c3ff]"> Analytical thinking</label>
+          <label class="block"><input type="radio" name="q2" value="teamwork" class="mr-2 accent-[#00c3ff]"> Teamwork</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question space-y-3">
+          <p class="text-lg font-semibold">3. What environment do you prefer?</p>
+          <label class="block"><input type="radio" name="q3" value="independent" class="mr-2 accent-[#00c3ff]"> Working independently</label>
+          <label class="block"><input type="radio" name="q3" value="collaborative" class="mr-2 accent-[#00c3ff]"> Working with a team</label>
+          <label class="block"><input type="radio" name="q3" value="flexible" class="mr-2 accent-[#00c3ff]"> Flexible work environments</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question space-y-3">
+          <p class="text-lg font-semibold">4. Which activity sounds most appealing?</p>
+          <label class="block"><input type="radio" name="q4" value="research" class="mr-2 accent-[#00c3ff]"> Research and learning</label>
+          <label class="block"><input type="radio" name="q4" value="design" class="mr-2 accent-[#00c3ff]"> Designing user experiences</label>
+          <label class="block"><input type="radio" name="q4" value="data" class="mr-2 accent-[#00c3ff]"> Working with numbers and data</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question space-y-3">
+          <p class="text-lg font-semibold">5. How do you approach problems?</p>
+          <label class="block"><input type="radio" name="q5" value="logical" class="mr-2 accent-[#00c3ff]"> Break it down logically</label>
+          <label class="block"><input type="radio" name="q5" value="experimental" class="mr-2 accent-[#00c3ff]"> Try different creative ideas</label>
+          <label class="block"><input type="radio" name="q5" value="collaborative" class="mr-2 accent-[#00c3ff]"> Ask others for input</label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question space-y-3">
+          <p class="text-lg font-semibold">6. What's your preferred work style?</p>
+          <label class="block"><input type="radio" name="q6" value="organized" class="mr-2 accent-[#00c3ff]"> Following structure and routines</label>
+          <label class="block"><input type="radio" name="q6" value="adaptable" class="mr-2 accent-[#00c3ff]"> Go with the flow and adapt</label>
+          <label class="block"><input type="radio" name="q6" value="innovative" class="mr-2 accent-[#00c3ff]"> Break the rules, innovate</label>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="w-full mt-6 bg-[#00c3ff] text-black font-bold py-3 rounded-xl hover:bg-[#00a8e0] transition duration-300 hidden">
+          Submit Quiz
+        </button>
+
+      </form>
+    </div>
+  </div>
 </body>
 </html>
