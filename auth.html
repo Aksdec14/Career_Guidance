@@ -4,21 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Auth | Login & Signup</title>
-  <link rel="stylesheet" href="assets/css/auth.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Background Image */
+    body {
+      background-image: url('https://i.pinimg.com/736x/0e/05/90/0e05905b06375a5efbf89243801f56b0.jpg'); /* Add your career-themed background image URL here */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
 </head>
-<body>
-  <div class="auth-container">
-    <div class="form-box">
-      <h2 id="form-title">Login</h2>
-      <form id="auth-form">
-        <input type="text" id="username" placeholder="Username" required />
-        <input type="password" id="password" placeholder="Password" required />
-        <input type="email" id="email" placeholder="Email" class="hidden" />
-        <button type="submit" class="btn">Login</button>
-        <p class="toggle-text">Don't have an account? <span id="toggle-link">Sign Up</span></p>
+<body class="bg-black text-white font-sans">
+
+  <!-- Auth Container -->
+  <div class="flex justify-center items-center min-h-screen bg-black bg-opacity-50">
+    <div class="bg-[#182937] p-8 rounded-xl shadow-lg w-full max-w-md">
+
+      <!-- Form Box -->
+      <h2 class="text-3xl font-bold text-center text-[#00c3ff]" id="form-title">Login</h2>
+      <form id="auth-form" class="mt-8 space-y-6">
+        <div>
+          <input type="text" id="username" placeholder="Username" required class="w-full p-3 rounded-lg bg-[#0e1a25] text-white border border-[#00c3ff] focus:ring-2 focus:ring-[#00c3ff]"/>
+        </div>
+        <div>
+          <input type="password" id="password" placeholder="Password" required class="w-full p-3 rounded-lg bg-[#0e1a25] text-white border border-[#00c3ff] focus:ring-2 focus:ring-[#00c3ff]"/>
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Email" class="w-full p-3 rounded-lg bg-[#0e1a25] text-white border border-[#00c3ff] focus:ring-2 focus:ring-[#00c3ff] hidden"/>
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-lg bg-[#00c3ff] hover:bg-[#00a0d1] text-black font-semibold transition">Login</button>
+
+        <p class="text-center text-gray-400 mt-4">
+          Don't have an account? <span id="toggle-link" class="text-[#00c3ff] cursor-pointer">Sign Up</span>
+        </p>
       </form>
     </div>
   </div>
+
   <script src="assets/js/auth.js"></script>
 </body>
 </html>
