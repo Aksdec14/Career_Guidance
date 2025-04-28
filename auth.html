@@ -8,33 +8,110 @@
   <style>
     /* Background Image */
     body {
-      background-image: url('https://i.pinimg.com/736x/0e/05/90/0e05905b06375a5efbf89243801f56b0.jpg'); /* Add your career-themed background image URL here */
+      background-image: url('https://i.pinimg.com/736x/0e/05/90/0e05905b06375a5efbf89243801f56b0.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Ensure form container adapts on small screens */
+    .auth-container {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    /* Card */
+    .auth-card {
+      background-color: #182937;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* Input Fields */
+    .auth-input {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      background-color: #0e1a25;
+      color: white;
+      border: 1px solid #00c3ff;
+      outline: none;
+      transition: box-shadow 0.3s ease;
+    }
+    .auth-input:focus {
+      box-shadow: 0 0 0 3px #00c3ff80;
+    }
+
+    /* Button */
+    .auth-button {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      background-color: #00c3ff;
+      color: black;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .auth-button:hover {
+      background-color: #00a0d1;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 640px) {
+      .auth-card {
+        padding: 1.5rem;
+        max-width: 90%;
+      }
+      #form-title {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .auth-card {
+        padding: 1rem;
+      }
+      .auth-input {
+        padding: 0.6rem;
+      }
+      .auth-button {
+        padding: 0.6rem;
+      }
     }
   </style>
 </head>
 <body class="bg-black text-white font-sans">
 
   <!-- Auth Container -->
-  <div class="flex justify-center items-center min-h-screen bg-black bg-opacity-50">
-    <div class="bg-[#182937] p-8 rounded-xl shadow-lg w-full max-w-md">
+  <div class="auth-container">
+    <div class="auth-card">
 
       <!-- Form Box -->
       <h2 class="text-3xl font-bold text-center text-[#00c3ff]" id="form-title">Login</h2>
       <form id="auth-form" class="mt-8 space-y-6">
         <div>
-          <input type="text" id="username" placeholder="Username" required class="w-full p-3 rounded-lg bg-[#0e1a25] text-white border border-[#00c3ff] focus:ring-2 focus:ring-[#00c3ff]"/>
+          <input type="text" id="username" placeholder="Username" required class="auth-input"/>
         </div>
         <div>
-          <input type="password" id="password" placeholder="Password" required class="w-full p-3 rounded-lg bg-[#0e1a25] text-white border border-[#00c3ff] focus:ring-2 focus:ring-[#00c3ff]"/>
+          <input type="password" id="password" placeholder="Password" required class="auth-input"/>
         </div>
         <div>
-          <input type="email" id="email" placeholder="Email" class="w-full p-3 rounded-lg bg-[#0e1a25] text-white border border-[#00c3ff] focus:ring-2 focus:ring-[#00c3ff] hidden"/>
+          <input type="email" id="email" placeholder="Email" class="auth-input hidden"/>
         </div>
 
-        <button type="submit" class="w-full py-3 rounded-lg bg-[#00c3ff] hover:bg-[#00a0d1] text-black font-semibold transition">Login</button>
+        <button type="submit" class="auth-button">Login</button>
 
         <p class="text-center text-gray-400 mt-4">
           Don't have an account? <span id="toggle-link" class="text-[#00c3ff] cursor-pointer">Sign Up</span>
