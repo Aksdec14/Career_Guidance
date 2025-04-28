@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script> <!-- TailwindCSS -->
 
- <style>
+  <style>
   /* Already applied styles */
   #roadmap-container h3 {
     margin-top: 1.5rem;
@@ -44,7 +44,8 @@
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.3s ease-in-out;
+    color: transparent; /* <-- ADD THIS: hide list item text initially */
+    transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.3s ease-in-out, color 0.3s ease;
     transform: scaleY(0);
     transform-origin: top;
   }
@@ -53,6 +54,7 @@
     max-height: 500px;
     opacity: 1;
     transform: scaleY(1);
+    color: #ffffff; /* <-- ADD THIS: show list item text in white when opened */
   }
 
   .roadmap-section li {
@@ -123,10 +125,10 @@
       padding-left: 20px;
     }
   }
-</style>
-
+  </style>
 
 </head>
+
 <body class="bg-gradient-to-r from-[#141e30] to-[#243b55] min-h-screen flex items-center justify-center p-6">
 
   <!-- Background Overlay -->
@@ -137,19 +139,17 @@
 
     <div class="space-y-4">
       <p id="career-description" class="text-lg sm:text-xl leading-relaxed mb-2 font-bold text-white"></p>
-<p id="career-futureScope" class="text-lg sm:text-xl leading-relaxed mb-2 text-white"></p>
-<p class="text-lg sm:text-xl leading-relaxed mb-2 text-white">
-    <strong>Average Salary:</strong> <span id="career-salary"></span>
-</p>
-<p class="text-lg sm:text-xl leading-relaxed mb-2 text-white">
-    <strong>Workload:</strong> <span id="career-workload"></span>
-</p>
-<p class="text-lg sm:text-xl leading-relaxed mb-4 text-white">
-    <strong>How to Start:</strong> <span id="career-start"></span>
-</p>
-
-  </div>
-  
+      <p id="career-futureScope" class="text-lg sm:text-xl leading-relaxed mb-2 text-white"></p>
+      <p class="text-lg sm:text-xl leading-relaxed mb-2 text-white">
+        <strong>Average Salary:</strong> <span id="career-salary"></span>
+      </p>
+      <p class="text-lg sm:text-xl leading-relaxed mb-2 text-white">
+        <strong>Workload:</strong> <span id="career-workload"></span>
+      </p>
+      <p class="text-lg sm:text-xl leading-relaxed mb-4 text-white">
+        <strong>How to Start:</strong> <span id="career-start"></span>
+      </p>
+    </div>
 
     <div id="roadmap-container" class="mt-8 space-y-6"></div>
 
