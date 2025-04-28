@@ -6,202 +6,125 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script> <!-- TailwindCSS -->
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #141e30, #243b55);
-      color: #fff;
-      padding: 2rem;
-      position: relative;
-      overflow: hidden; /* To ensure the background does not overflow */
-      height: 100vh; /* Ensure full height of the viewport */
-    }
+ <style>
+  /* Already applied styles */
+  #roadmap-container h3 {
+    margin-top: 1.5rem;
+    color: #00ffcc;
+  }
 
-    /* Add a semi-transparent background image overlay */
-    .background-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('https://i.pinimg.com/736x/0c/89/7a/0c897a0d389bc687e3457ba28ddf54c0.jpg') no-repeat center center/cover; /* Background image */
-      background-size: cover;
-      background-attachment: fixed; /* Make background fixed */
-      opacity: 0.3; /* Adjust opacity */
-      z-index: -1; /* Make sure it stays behind the content */
-    }
+  .roadmap-section {
+    margin-top: 10px;
+    border-left: 4px solid #00c3ff;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: rgba(30, 42, 56, 0.85); /* Semi-transparent background for the content */
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-      z-index: 1; /* Ensure content stays above background */
-      max-height: calc(100vh - 4rem); /* Make the container height less than the viewport */
-      overflow-y: auto; /* Allow scrolling if content exceeds the container height */
-    }
+  .roadmap-section h3 {
+    cursor: pointer;
+    background-color: #2a3d52;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+  }
 
-    h2 {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 1rem;
-      color: #00c3ff;
-    }
+  .roadmap-section h3:hover {
+    background-color: #32495f;
+  }
 
-    .info {
-      margin: 10px 0;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
+  .roadmap-section ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      background: #00c3ff;
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
+  .roadmap-section ul.show {
+    max-height: 500px;
+    opacity: 1;
+    transform: scaleY(1);
+  }
 
-    .btn:hover {
-      background: #01b3e3;
-    }
+  .roadmap-section li {
+    margin: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 
-    #roadmap-container h3 {
-      margin-top: 1.5rem;
-      color: #00ffcc;
+  .roadmap-section li::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #00ffcc;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* Tablet (up to 768px) */
+  @media (max-width: 768px) {
+    #roadmap-container {
+      margin-top: 1rem;
     }
 
     .roadmap-section {
-      margin-top: 10px;
-      border-left: 4px solid #00c3ff;
-      padding-left: 1rem;
+      padding-left: 0.8rem;
       margin-bottom: 1rem;
-      transition: all 0.3s ease-in-out;
     }
 
     .roadmap-section h3 {
-      cursor: pointer;
-      background-color: #2a3d52;
-      padding: 10px;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 1.2rem;
-      transition: background 0.3s ease;
-    }
-
-    .roadmap-section h3:hover {
-      background-color: #32495f;
+      font-size: 1.1rem;
+      padding: 0.8rem;
     }
 
     .roadmap-section ul {
-      list-style: none;
-      padding-left: 20px;
-      margin-top: 10px;
-      overflow: hidden;
-      max-height: 0;
-      opacity: 0;
-      transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.3s ease-in-out;
-      transform: scaleY(0);
-      transform-origin: top;
-    }
-
-    .roadmap-section ul.show {
-      max-height: 500px;
-      opacity: 1;
-      transform: scaleY(1);
+      padding-left: 15px;
     }
 
     .roadmap-section li {
-      margin: 8px 0;
-      position: relative;
-      padding-left: 25px;
+      font-size: 0.95rem;
+      padding-left: 22px;
+    }
+  }
+
+  /* Mobile (up to 480px) */
+  @media (max-width: 480px) {
+    #roadmap-container {
+      margin-top: 0.8rem;
+    }
+
+    .roadmap-section {
+      padding-left: 0.6rem;
+    }
+
+    .roadmap-section h3 {
       font-size: 1rem;
-      line-height: 1.6;
+      padding: 0.7rem;
     }
 
-    .roadmap-section li::before {
-      content: "\f058";
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      color: #00ffcc;
-      position: absolute;
-      left: 0;
-      top: 0;
+    .roadmap-section ul {
+      padding-left: 12px;
     }
 
-    /* Tablet Responsive */
-    @media (max-width: 768px) {
-      body {
-        padding: 1.5rem;
-      }
-
-      .container {
-        padding: 1.5rem;
-      }
-
-      h2 {
-        font-size: 1.6rem;
-      }
-
-      .roadmap-section h3 {
-        font-size: 1.1rem;
-        padding: 0.8rem;
-      }
-
-      .roadmap-section li {
-        font-size: 0.95rem;
-        padding-left: 22px;
-      }
+    .roadmap-section li {
+      font-size: 0.9rem;
+      padding-left: 20px;
     }
+  }
+</style>
 
-    /* Mobile Responsive */
-    @media (max-width: 480px) {
-      body {
-        padding: 1rem;
-      }
-
-      .container {
-        padding: 1rem;
-      }
-
-      h2 {
-        font-size: 1.4rem;
-      }
-
-      .info {
-        font-size: 0.95rem;
-      }
-
-      .btn {
-        width: 100%;
-        text-align: center;
-        padding: 0.75rem 1rem;
-      }
-
-      .roadmap-section {
-        padding-left: 0.75rem;
-      }
-
-      .roadmap-section h3 {
-        font-size: 1rem;
-        padding: 0.7rem;
-      }
-
-      .roadmap-section li {
-        font-size: 0.9rem;
-        padding-left: 20px;
-      }
-    }
-  </style>
 
 </head>
 <body class="bg-gradient-to-r from-[#141e30] to-[#243b55] min-h-screen flex items-center justify-center p-6">
